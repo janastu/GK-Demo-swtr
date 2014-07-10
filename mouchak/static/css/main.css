@@ -4,6 +4,8 @@ html,
 body {
   height: 100%;
   width: 100%;
+  font-size: 16px;
+  font-family: "Lobster, sans";
 }
 #gkdemo-header {
   background: url(/static/uploads/Teppotsava_Pond_located_left_side_of_the_Virupaksha_Temple.jpg) no-repeat top transparent; 
@@ -228,6 +230,7 @@ body {
 .store-text {
   margin-left:20%;
   width: auto;
+  margin-top: -40px;
  /* margin-top:-7%;*/
 }
 .img-wrapper img {
