@@ -237,8 +237,10 @@ body {
 .text-wrapper {
   line-height: inherit;
   font-size: 14px;
-
-
+  margin-left: -45px;
+  margin-top: 200px;
+  height:200px;
+  overflow-y: scroll;
 }
 .store-wrapper img {
   height: auto;
