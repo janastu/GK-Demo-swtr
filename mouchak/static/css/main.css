@@ -1,289 +1,495 @@
-/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
-
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+/* Global Styles */
 
 html,
-button,
-input,
-select,
-textarea {
-    color: #222;
+body {
+  height: 100%;
+  width: 100%;
+}
+#gkdemo-header {
+  background: url(/static/uploads/Teppotsava_Pond_located_left_side_of_the_Virupaksha_Temple.jpg) no-repeat top transparent; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height:100%;
+  width:100%;
+  box-sizing: border-box;
+}
+#header-text {
+  font-size: 50px;
+  text-shadow: 2px 3px 4px grey;
+  margin-left:37%;
+  margin-top:10%
+ /* position: absolute;
+  top:20%;
+  left:25%;*/
+}
+.background  {
+  /*position: fixed;
+  top: 0px;
+  left: 0px;*/
+  width: 100%;
+  height: 200%;
+  background-repeat: no-repeat;
+  background-size: cover;i
+}
+#prologue {
+  margin-left: -5px;
+  margin-top:10px;
+  background-color:#A5DA91;
+  position: relative;
+  top: 890px;
+  left: 3px;
+  padding: 10px 10px 5px 5px;
+  text-align: justify;
+  opacity:0.9;
+}
+#prologueA{
+  position:absolute;
+  left:0px;
 }
 
-html {
-    font-size: 1em;
-    line-height: 1.4;
+#prologueB{
+  position: absolute;
+  top:400px;
+  left:0px;
 }
 
-/*
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
 
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+
+  /*background-image: url(http://gka-photoshoot.pantoto.org/17April/IMG_9117.jpg); nice pic*/
+#section1 {
+  margin-left: 20px;
+  margin-top:10px;
+  background-image: url(/static/uploads/IMG_9129.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 1800px;
+  left: -20px;
+  padding: 20px 10px 24px 5px;
+}
+#section1a {
+  position:relative;
+  top:10px;
+}
+#section1b {
+  position:relative;
+  top:75px;
+}
+#section1c {
+  position:relative;
+  top: 189px;
+}
+#section1d {
+  position:relative;
+  top:254px;
+}
+#section2 {
+/*  margin-left: 20px;*/
+  margin-top:10px;
+  position: relative;
+  top: 4000px;
+  left: -9px;
+  background-color: transparent;
+  padding: 20px 10px 24px 5px;
+  background-image: url(/static/uploads/IMG_9117.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#section2b {
+  position: relative;
+  top:90px;
+
+}
+#section2c {
+  position: relative;
+  top:200px;
+  left:25px;
+
+}
+#section2d {
+  position: relative;
+  top:373px;
+  left:25px;
+}
+#sweets-container3 {
+  display:none;
 }
 
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+#prologue-store {
+  overflow-x:hidden;
+  height:100em;
+  width: auto;
+  position: relative;
+  right: 53%;
 }
 
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+#sectionA-store {
+  overflow-x:hidden;
+ /* overflow-y:hidden;*/
+  height:39em;
+  width: auto;
+  background:#74C9A4;
+  margin-left: -20px;
+  margin-right: 10px;
+  box-shadow: 0px 2px 6px #0E601B;
+  position: relative;
+  top:20px;
+  left:15px;
 }
 
-/*
- * Remove the gap between images, videos, audio and canvas and the bottom of
- * their containers: h5bp.com/i/440
- */
-
-audio,
-canvas,
-img,
-video {
-    vertical-align: middle;
+#sectionA1-store {
+  overflow-x:hidden;
+ /* overflow-y:hidden;*/
+  height:39em;
+  width: auto;
+  background:#74C9A4;
+  margin-left: -20px;
+  box-shadow: 0px 2px 6px #0E601B;
+  position: relative;
+  top:-85px;
+}
+#sectionB-store {
+  overflow-x:hidden;
+  height:40.5em;
+  width: auto;
+  background:#74C9A4;
+  position: relative;
+  box-shadow: 0px 2px 6px #0E601B;
+  left:15px;
 }
 
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+#sectionB1-store {
+  overflow-x:hidden;
+  height:39em;
+  width: auto;
+  background:#74C9A4;
+  position: relative;
+  box-shadow: 0px 2px 6px #0E601B;
+  top:-36px;
+  left:3px; 
+}
+#section1e {
+  margin-top: -20px;
+  margin-bottom: 3px;
+  position:relative;
+  top:10px;
+  z-index:1;
 }
 
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-    resize: vertical;
+#section2e {
+  margin-bottom: -57px;
+  z-index: 1;
+}
+#section3 {
+  height: auto;
+  background-color:#0E601B;
+  margin-top:10px;
+  position: relative;
+  top: 4200px;
+  left: -9px;
+  padding: 20px 10px 24px 5px;
+  background-size: cover;
+}
+#section3-store {
+  height: 700px;
+  background-color:#0E601B;
 }
 
-/* ==========================================================================
-   Browse Happy prompt
-   ========================================================================== */
-
-.browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+.text-container {
+  margin-top: 85px;
+  position: absolute;
+  color: #512604;
+  margin-left: 50%;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Image replacement
- */
-
-.ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    /* IE 6/7 fallback */
-    *text-indent: -9999px;
+.content-box {
+  text-align: justify;
+  line-height : 1.4;
+  
 }
 
-.ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
+
+
+#sweets-store {
+  height: auto;
+  margin-left: 700px;
+  width: 300px;
+  margin-top: -53%;
+  background-color: black;
 }
 
-/*
- * Hide from both screenreaders and browsers: h5bp.com/u
- */
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
+.store-text {
+  margin-left:20%;
+  width: auto;
+ /* margin-top:-7%;*/
+}
+.img-wrapper img {
+  width: 500px;
 }
 
-/*
- * Hide only visually, but have it available for screenreaders: h5bp.com/v
- */
+.text-wrapper {
+  line-height: inherit;
+  font-size: 14px;
 
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+
+}
+.store-wrapper img {
+  height: auto;
+  width: 400px;
+  border: 1px solid #ccc;
+  margin: 2px 0px 2px 0px;
 }
 
-/*
- * Extends the .visuallyhidden class to allow the element to be focusable
- * when navigated to via the keyboard: h5bp.com/p
- */
+.well{
+  border-radius:0;
+  background-color:#A5DA91;
+  border: 1px transparent;
+  opacity:0.9;
+}
+/* Side Menu */
 
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
+
+.vert-text {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
 }
 
-/*
- * Hide visually and from screenreaders, but maintain layout
- */
-
-.invisible {
-    visibility: hidden;
+.vert-text h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 4.5em;
+  font-weight: 700;
 }
 
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
+/* Side Menu */
 
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+#sidebar-wrapper {
+  margin-left: -250px;
+  top: 30px;
+  left: 0;
+  width: 250px;
+  background: #9ACBB8;
+  opacity:0.9;
+  position: fixed;
+  height: 85%;
+  overflow-y: auto;
+  z-index: 1000;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  margin-top:0px;
 }
 
-.clearfix:after {
-    clear: both;
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-/*
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-
-.clearfix {
-    *zoom: 1;
+.sidebar-nav li {
+  line-height: 40px;
+  text-indent: 20px;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+.sidebar-nav li a {
+  color: #999999;
+  display: block;
+  text-decoration: none;
 }
 
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+.sidebar-nav li a:hover {
+  color: #fff;
+  background: rgba(255,255,255,0.2);
+  text-decoration: none;
 }
 
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid required HTTP connection: h5bp.com/r
-   ========================================================================== */
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
 
-@media print {
-    * {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
+.sidebar-nav > .sidebar-brand {
+  height: 55px;
+  line-height: 55px;
+  font-size: 18px;
+}
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
+.sidebar-nav > .sidebar-brand a {
+  color: #999999;
+}
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
+#menu-toggle {
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 10;
+}
 
-    /*
-     * Don't show links for images, or javascript/internal links
-     */
+#sidebar-wrapper.active {
+  left: 250px;
+  top:30px;
+  width: 250px;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
 
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
-        content: "";
-    }
+.toggle {
+  margin: 5px 5px 0 0;
+}
 
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
+/* Full Page Image Header Area */
 
-    thead {
-        display: table-header-group; /* h5bp.com/t */
-    }
+.vert-text {
+  color: #ccc;
+  z-index:100;
+}
 
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
+.header {
+  display: table;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: url(/static/uploads/Teppotsava_Pond_located_left_side_of_the_Virupaksha_Temple.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
-    img {
-        max-width: 100% !important;
-    }
+/* Intro */
 
-    @page {
-        margin: 0.5cm;
-    }
+.intro {
+  padding: 50px 0;
+}
 
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
+/* Services */
 
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+.services {
+  background: rgb(5,42,61);
+  padding: 50px 0;
+  color: #ffffff;
+}
+
+.service-item {
+  margin-bottom: 15px;
+}
+
+i.service-icon {
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 56px;
+  width: 140px;
+  height: 140px;
+  line-height: 136px;
+  vertical-align: middle; 
+  text-align: center;
+}
+
+/* Callout */
+
+.callout {
+  color: #ffffff;
+  display: table;
+  height: 400px;
+  width: 100%;
+  background: url(/static/uploads/phalapooje3.JPG) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Portfolio */
+
+.portfolio {
+  padding: 50px 0;
+}
+
+.portfolio-item {
+  margin-bottom: 25px;
+}
+
+.img-portfolio {
+  margin: 0 auto;
+}
+
+
+/* Call to Action */
+
+.call-to-action {
+  color: #ffffff;
+  background: #0a5175;
+  padding: 50px 0;
+}
+
+.call-to-action .btn {
+  margin: 10px;
+}
+
+/* Map */
+
+.map {
+  height: 500px;
+}
+
+/* Footer */
+
+footer {
+  padding: 100px 0;
+}
+
+.top-scroll {
+  margin-top: 50px;
+}
+
+.top-scroll a {
+  text-decoration: none;
+  color: inherit;
+}
+
+i.scroll {
+  color: #333333;
+}
+
+i.scroll:hover {
+  color: #0a5175;
+}
+/* Responsive */
+
+@media (max-width: 768px) {
+	
+  .header {
+	background: url(../img/bg.jpg) no-repeat center center scroll; 
+  }
+
+  .callout {
+	background: url(../img/callout.jpg) no-repeat center center scroll; 
+  }
+
+  .map {
+	height: 75%;
+  }
+
 }

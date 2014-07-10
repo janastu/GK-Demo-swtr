@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block body %}
-  <div class="container" id="container">
+  <div class="container-fluid" id="container">
     <div id="header">
       <div id="header-banner">
         {{ content['header']['html']|safe }}
@@ -117,4 +117,34 @@
     </div>
   </script>
 
+  <script type="text/template" id="sweets-template">
+    <div class="sweets-wrapper">
+      <img src= "<%= where %>" ></div>
+      <div class = "text-wrapper well">
+      <span><%= how.text%> </span>
+      </div>
+  </script>  
+  <script type="text/template" id="store-template">
+    <div class="row">
+    <div class="store-wrapper col-md-4">
+      <img src= "<%= where %>" ></div>
+    <div class = "store-text well col-md-4">
+      <span><strong><%= how.title %></strong> </span>
+      <span><%= how.comment%> </span>
+      <span><%= how.text%> </span>
+      </div>
+    </div>
+    </div>
+  </script>  
+
+  <script type="text/template" id="lastStore-template">
+    <div class="img-wrapper col-md-4">
+      <img src= "<%= where %>" ></div>
+    <div class = "text-wrapper well col-md-2">
+      <span><strong><%= how.title %></strong> </span>
+      <span><%= how.comment%> </span>
+      <span><%= how.text%> </span>
+    </div>
+    </div>
+  </script>  
 {% endblock %}
