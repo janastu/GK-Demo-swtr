@@ -8,7 +8,7 @@ body {
   font-family: "Lobster, sans";
 }
 #gkdemo-header {
-  background: url(/static/uploads/Teppotsava_Pond_located_left_side_of_the_Virupaksha_Temple.jpg) no-repeat top transparent; 
+  background: url(/gk-swt-demo/static/uploads/Teppotsava_Pond_located_left_side_of_the_Virupaksha_Temple.jpg)no-repeat top transparent; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -38,6 +38,21 @@ body {
   background-repeat: no-repeat;
   background-size: cover;i
 }
+.backgroundchaha {
+  background-color: #fff;
+}
+
+#mysoredussera {
+  margin-left: -5px;
+  margin-top:10px;
+  background-color:#A5DA91;
+  position: relative;
+  top: 890px;
+  left: 3px;
+  padding: 10px 10px 5px 5px;
+  text-align: justify;
+  opacity:0.9;
+}
 #prologue {
   margin-left: -5px;
   margin-top:10px;
@@ -49,9 +64,14 @@ body {
   text-align: justify;
   opacity:0.9;
 }
-#prologueA{
+#mysoredusseraA{
   position:absolute;
   left:0px;
+}
+#prologueA {
+  position:absolute;
+  left:0px;
+
 }
 
 #prologueB{
@@ -66,7 +86,7 @@ body {
 #section1 {
   margin-left: 20px;
   margin-top:10px;
-  background-image: url(/static/uploads/IMG_9129.jpg);
+  background-image: url(/gk-swt-demo/static/uploads/IMG_9129.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -74,6 +94,34 @@ body {
   top: 1800px;
   left: -20px;
   padding: 20px 10px 24px 5px;
+}
+#mysoredusseraB {
+  margin-left: 20px;
+  margin-top:10px;
+  background-image: url(/static/uploads/IMG_9129.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: 1800px;
+  left: -20px;
+  padding: 20px 10px 24px 5px;
+}
+#mysoredusseraB1 {
+  position:relative;
+  top:10px;
+}
+#mysoredusseraB2 {
+  position:relative;
+  top:75px;
+}
+#mysoredusseraB3 {
+  position:relative;
+  top:189px;
+}
+#mysoredusseraB4 {
+  position:relative;
+  top:254px;
 }
 #section1a {
   position:relative;
@@ -99,7 +147,7 @@ body {
   left: -9px;
   background-color: transparent;
   padding: 20px 10px 24px 5px;
-  background-image: url(/static/uploads/IMG_9117.jpg);
+  background-image: url(/gk-swt-demo/static/uploads/IMG_9117.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -177,7 +225,35 @@ body {
   top:-36px;
   left:3px; 
 }
+#mysoredusseraB1-store {
+  overflow-x:hidden;
+  height:39em;
+  width: auto;
+  background:#74C9A4;
+  position: relative;
+  box-shadow: 0px 2px 6px #0E601B;
+  top:-36px;
+  left:3px; 
+}
+#mysoredusseraB-store {
+  overflow-x:hidden;
+  height:39em;
+  width: auto;
+  background:#74C9A4;
+  position: relative;
+  box-shadow: 0px 2px 6px #0E601B;
+  top:-36px;
+  left:3px; 
+}
 #section1e {
+  margin-top: -20px;
+  margin-bottom: 3px;
+  position:relative;
+  top:10px;
+  z-index:1;
+}
+
+#mysoredusseraB5 {
   margin-top: -20px;
   margin-bottom: 3px;
   position:relative;
@@ -198,6 +274,21 @@ body {
   left: -9px;
   padding: 20px 10px 24px 5px;
   background-size: cover;
+}
+
+#mysoredusseraC {
+  height: auto;
+  background-color:#0E601B;
+  margin-top:10px;
+  position: relative;
+  top: 3500px;
+  left: -9px;
+  padding: 20px 10px 24px 5px;
+  background-size: cover;
+}
+#mysoredusseraC-store {
+  height: 700px;
+  background-color:#0E601B;
 }
 #section3-store {
   height: 700px;
