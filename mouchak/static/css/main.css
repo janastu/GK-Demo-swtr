@@ -8,7 +8,7 @@ body {
   font-family: "Lobster, sans";
 }
 #gkdemo-header {
-  background: url(/gk-swt-demo/static/uploads/Teppotsava_Pond_located_left_side_of_the_Virupaksha_Temple.jpg)no-repeat top transparent; 
+  background: url(/static/uploads/Teppotsava_Pond_located_left_side_of_the_Virupaksha_Temple.jpg)no-repeat top transparent; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -58,7 +58,7 @@ body {
   margin-top:10px;
   background-color:#A5DA91;
   position: relative;
-  top: 890px;
+  top:700px;
   left: 3px;
   padding: 10px 10px 5px 5px;
   text-align: justify;
@@ -71,6 +71,7 @@ body {
 #prologueA {
   position:absolute;
   left:0px;
+  top:-80px;
 
 }
 
@@ -86,7 +87,7 @@ body {
 #section1 {
   margin-left: 20px;
   margin-top:10px;
-  background-image: url(/gk-swt-demo/static/uploads/IMG_9129.jpg);
+  background-image: url(/static/uploads/IMG_9129.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -147,7 +148,7 @@ body {
   left: -9px;
   background-color: transparent;
   padding: 20px 10px 24px 5px;
-  background-image: url(/gk-swt-demo/static/uploads/IMG_9117.jpg);
+  background-image: url(/static/uploads/IMG_9117.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -165,7 +166,7 @@ body {
 }
 #section2d {
   position: relative;
-  top:373px;
+  top:194px;
   left:25px;
 }
 #sweets-container3 {
@@ -321,20 +322,23 @@ body {
 .store-text {
   margin-left:20%;
   width: auto;
-  margin-top: -40px;
+  margin-top: -45px;
+  height: 60px;
+  overflow-y: auto;
  /* margin-top:-7%;*/
 }
 .img-wrapper img {
-  width: 500px;
+  width: 375px;
+  margin-top: 20px;
+  margin-left: 0px;
 }
 
 .text-wrapper {
   line-height: inherit;
   font-size: 14px;
-  margin-left: -45px;
-  margin-top: 200px;
-  height:200px;
-  overflow-y: scroll;
+  margin-left: -40px;
+  margin-top: 45px;
+  overflow-y: auto;
 }
 .store-wrapper img {
   height: auto;
