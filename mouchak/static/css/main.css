@@ -87,7 +87,7 @@ body {
 #section1 {
   margin-left: 20px;
   margin-top:10px;
-  background-image: url(/static/uploads/IMG_9129.jpg);
+ /* background-image: url(/static/uploads/IMG_9129.jpg);*/
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -148,7 +148,7 @@ body {
   left: -9px;
   background-color: transparent;
   padding: 20px 10px 24px 5px;
-  background-image: url(/static/uploads/IMG_9117.jpg);
+ /* background-image: url(/static/uploads/IMG_9117.jpg);*/
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
