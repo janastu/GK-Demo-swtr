@@ -150,38 +150,37 @@ var AppRouter = Backbone.Router.extend({
   }
 });
 
+/*Sweet swagger widget view */ 
 var SweetsView = Backbone.View.extend({
   el: document,
-/*  events: {
-    'visibilitychange' : 'interactiveSweets'
-  },*/
 
   initialize: function() {
     var self = this;
-    //$(document).on("visibilitychange", _.bind(this.interactiveSweets, this));
-    this.sweets = [];
-    this.anotherSweets = [];
-    this.maliniSweets = [];
-    this.chahaSweets = [];
+    this.sweets = []; //to save local context of the sweets fetched from Sweet Store in a array- has sweets from User bhanu
+    this.pradeepSweets = []; 
+    this.guestSweets = []; 
+    this.amraSweets = []; 
+    //Ajax request to fetch Sweets from sweet store using the api's Who, what,
+    //where and How
     $.ajax({url: "http://teststore.swtr.us/api/sweets/q?what=img-anno&who=bhanu",
       success: function(resp) {console.log('done..bhanu sweets', resp);
         self.sweets = resp;
       }
     });
     $.ajax({url: "http://teststore.swtr.us/api/sweets/q?what=img-anno&who=Guest",
-      success: function(resp) {console.log('done..malinisweets', resp);
-        self.maliniSweets = resp;
+      success: function(resp) {console.log('done..Guest  sweets', resp);
+        self.guestSweets = resp;
         self.interactiveSweets();
       }
     });
     $.ajax({url: "http://teststore.swtr.us/api/sweets/q?what=img-anno&who=pradeep",
-      success: function(resp) {console.log('done..Praddep sweets', resp);
-        self.anotherSweets =resp;
+      success: function(resp) {console.log('done..Pradeep sweets', resp);
+        self.pradeepSweets =resp;
       }
     });
     $.ajax({url: "http://teststore.swtr.us/api/sweets/q?what=img-anno&who=Amrapali",
-      success: function(resp) {console.log('done.. chaha Sweets', resp);
-        self.chahaSweets = resp;
+      success: function(resp) {console.log('done.. Amrapali Sweets', resp);
+        self.amraSweets = resp;
       }
     });
 
@@ -189,21 +188,21 @@ var SweetsView = Backbone.View.extend({
 
   interactiveSweets: function() { 
     var self = this;
-    console.log(this.sweets);
-    console.log("interactive called");
-      $('#prologue').waypoint(function(direction) {
-      console.log("in prologue");
-    });
-
-   $('#section1').waypoint(function(direction) {
+    // simple Demo Widget...
+      template =  _.template($("#store-template").html()); // template from index.html
+      _.each(self.sweets, function(swt) { 
+          $("#sweetWidget").append(_.template(template(swt))); // filtered response will be appended to DOM
+      }, self.sweets);
+//section 1 of narrative
+   $('#section1').waypoint(function(direction) {// waypoint is jquery plug in, to check for scroll position to display sweets in the widget
       console.log("insec1");
       var response,
       filterResp,
-      template =  _.template($("#store-template").html());
+      template =  _.template($("#store-template").html()); 
       filterResp = _.filter(self.sweets, function(swt) { return swt.how.comment});
       _.each(filterResp, function(swt) { 
-        if(_.contains(swt.how.tags, "GirijaKalyanaStory")) {
-          $("#sectionA-store").append(_.template(template(swt)));
+        if(_.contains(swt.how.tags, "GirijaKalyanaStory")) { // to filter sweets with Tags
+          $("#sectionA-store").append(_.template(template(swt))); // filtered response will be appended to DOM
         }
       }, filterResp);
     }, {
@@ -222,61 +221,59 @@ var SweetsView = Backbone.View.extend({
     }, {
       triggerOnce: true
     });
+    //section 2 of narrative
     $('#section2c').waypoint(function(direction) {
       console.log("insec2c");
       var response,
       filterResp,
       template =  _.template($("#store-template").html());
      console.log(self.anotherSweets);
-      filterResp = _.filter(self.anotherSweets, function(swt) { return swt.how});
+      filterResp = _.filter(self.pradeepSweets, function(swt) { return swt.how});
       _.each(filterResp, function(swt) { 
          console.log(swt);
-          $("#sectionB1-store").append(_.template(template(swt)));
+          $("#sectionB-store").append(_.template(template(swt))); // filtered response will be appended to DOM
       }, filterResp);
     }, {
       triggerOnce: true
     });
-
     $('#section2').waypoint(function(direction) {
       console.log("in sec2");
       var response,
       filterResp,
       template =  _.template($("#store-template").html());
-
-  //  $.ajax({url: "http://teststore.swtr.us/api/sweets/q?what=img-anno&who=bhanu",
-    //  success: function(resp) {console.log('done..');
-        //response = JSON.parse(resp);
-        filterResp = _.filter(self.maliniSweets, function(swt) { return swt.how});
-        _.each(filterResp, function(swt){ 
-          var str = swt.how.text, keyword = /hampi/gi;
+        filterResp = _.filter(self.guestSweets, function(swt) { return swt.how});
+        _.each(filterResp, function(swt){ // text search to find hampi in comments
+          var str = swt.how.text, keyword = "Hampi";
           if(typeof(str) == "string"){ 
             if(str.search(keyword)==-1){
-              console.log("no hampi");   
+              console.log(swt, "no hampi");   
         }
             else{
               console.log(swt, "hampi found");
-          $("#sectionB-store").append(_.template(template(swt)));
-        }}
+          $("#sectionB1-store").append(_.template(template(swt))); // filtered response will be appended to the DOM
+        }
+          }
         }, filterResp);
     }, {
       triggerOnce: true
     });
+    //last section of narrative: to filter Sweets with word "hampi" - using
+    //Sweets from User Amrapali
     $('#section3').waypoint(function(direction) {
       console.log("insec3");
       var response,
       filterResp,
       template =  _.template($("#lastStore-template").html());
-     console.log(self.chahaSweets);
-      filterResp = _.filter(self.chahaSweets, function(swt) { return swt.how.text});
+      filterResp = _.filter(self.amraSweets, function(swt) { return swt.how.text});
       _.each(filterResp, function(swt) {
-       var str = swt.how.text, keyword = /hampi/gi;
+       var str = swt.how.text, keyword = "hampi";
        if(typeof(str) == "string"){ 
         if(str.search(keyword)==-1){
           console.log("no hampi");
           
         }
         else{
-          console.log(swt, "hampi found");
+          console.log("hampi found");
           $("#section3-store").append(_.template(template(swt)));
         }}
       }, filterResp);
@@ -284,10 +281,7 @@ var SweetsView = Backbone.View.extend({
       triggerOnce: true
     });
   }
-  /* remove: function() {
-    $(document).off("customEvent", this.interactiveSweets);
-    Backbone.View.prototype.remove.apply(this, arguments);
-  }*/
+ 
 });
 // hashmap to maintain one-to-one lookup among page ids and
 // their names

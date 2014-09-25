@@ -6,14 +6,15 @@ body {
   width: 100%;
   font-size: 16px;
   font-family: "Lobster, sans";
+  background: url(/gk-swt-demo/static/uploads/Teppotsava_Pond_located_left_side_of_the_Virupaksha_Temple.jpg)repeat top transparent; 
 }
 #gkdemo-header {
-  background: url(/gk-swt-demo/static/uploads/Teppotsava_Pond_located_left_side_of_the_Virupaksha_Temple.jpg)no-repeat top transparent; 
+  /*background: url(/gk-swt-demo/static/uploads/Teppotsava_Pond_located_left_side_of_the_Virupaksha_Temple.jpg)no-repeat top transparent; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  position: fixed;
+  position: relative;
   top: 0px;
   left: 0px;
   height:100%;
@@ -24,7 +25,9 @@ body {
   font-size: 50px;
   text-shadow: 2px 3px 4px grey;
   margin-left:37%;
-  margin-top:10%
+  margin-top:10%;
+  position:fixed;
+  top:-10%;
  /* position: absolute;
   top:20%;
   left:25%;*/
@@ -55,14 +58,13 @@ body {
 }
 #prologue {
   margin-left: -5px;
-  margin-top:10px;
+  margin-top:-10%;
   background-color:#A5DA91;
   position: relative;
-  top:700px;
+  top:169px;
   left: 3px;
   padding: 10px 10px 5px 5px;
   text-align: justify;
-  opacity:0.9;
 }
 #mysoredusseraA{
   position:absolute;
@@ -77,11 +79,15 @@ body {
 
 #prologueB{
   position: absolute;
-  top:400px;
+  top:112px;
   left:0px;
 }
 
+.swtTags {
+  font-size: 20px;
+  color: green;
 
+}
 
   /*background-image: url(http://gka-photoshoot.pantoto.org/17April/IMG_9117.jpg); nice pic*/
 #section1 {
@@ -91,8 +97,8 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: absolute;
-  top: 1800px;
+  position: relative;
+  top: 1000px;
   left: -20px;
   padding: 20px 10px 24px 5px;
 }
@@ -144,7 +150,7 @@ body {
 /*  margin-left: 20px;*/
   margin-top:10px;
   position: relative;
-  top: 4000px;
+  top: 1352px;
   left: -9px;
   background-color: transparent;
   padding: 20px 10px 24px 5px;
@@ -166,7 +172,7 @@ body {
 }
 #section2d {
   position: relative;
-  top:194px;
+  top:300px;
   left:25px;
 }
 #sweets-container3 {
@@ -185,9 +191,9 @@ body {
   overflow-x:hidden;
  /* overflow-y:hidden;*/
   height:39em;
-  width: auto;
+  width: 444px;
   background:#74C9A4;
-  margin-left: -20px;
+  margin-left: -34px;
   margin-right: 10px;
   box-shadow: 0px 2px 6px #0E601B;
   position: relative;
@@ -199,9 +205,9 @@ body {
   overflow-x:hidden;
  /* overflow-y:hidden;*/
   height:39em;
-  width: auto;
+  width: 444px;
   background:#74C9A4;
-  margin-left: -20px;
+  margin-left: -14px;
   box-shadow: 0px 2px 6px #0E601B;
   position: relative;
   top:-85px;
@@ -209,17 +215,17 @@ body {
 #sectionB-store {
   overflow-x:hidden;
   height:40.5em;
-  width: auto;
+  width: 444px;
   background:#74C9A4;
   position: relative;
   box-shadow: 0px 2px 6px #0E601B;
-  left:15px;
+  left:5px;
 }
 
 #sectionB1-store {
   overflow-x:hidden;
   height:39em;
-  width: auto;
+  width: 428px;
   background:#74C9A4;
   position: relative;
   box-shadow: 0px 2px 6px #0E601B;
@@ -271,7 +277,7 @@ body {
   background-color:#0E601B;
   margin-top:10px;
   position: relative;
-  top: 4200px;
+  top: 3541px;
   left: -9px;
   padding: 20px 10px 24px 5px;
   background-size: cover;
@@ -344,14 +350,13 @@ body {
   height: auto;
   width: 400px;
   border: 1px solid #ccc;
-  margin: 2px 0px 2px 0px;
+  margin: 2px 0px 2px -5px;
 }
 
 .well{
   border-radius:0;
   background-color:#A5DA91;
   border: 1px transparent;
-  opacity:0.9;
 }
 /* Side Menu */
 
