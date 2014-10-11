@@ -190,8 +190,10 @@ var SweetsView = Backbone.View.extend({
     var self = this;
     // simple Demo Widget...
       template =  _.template($("#store-template").html()); // template from index.html
-      _.each(self.sweets, function(swt) { 
+      _.each(self.sweets, function(swt) {
+       if(_.contains(swt.how.tags, "lolcat")) {
           $("#sweetWidget").append(_.template(template(swt))); // filtered response will be appended to DOM
+       }
       }, self.sweets);
 //section 1 of narrative
    $('#section1').waypoint(function(direction) {// waypoint is jquery plug in, to check for scroll position to display sweets in the widget
