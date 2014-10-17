@@ -195,17 +195,25 @@ var SweetsView = Backbone.View.extend({
           $("#sweetWidget").append(_.template(template(swt))); // filtered response will be appended to DOM
        }
       }, self.sweets);
+      $('#dusseraContent').waypoint(function(direction){
+        var template = _.template($('#store-template').html());
+      console.log("in Dussera prologue");
+        
       _.each(self.sweets, function(swt) {
        if(_.contains(swt.how.tags, "CulturalContent")){
           $("#mysoredusseraB-store").append(_.template(template(swt))); // filtered response will be appended to DOM
-       }
+       console.log("here");}
       }, self.sweets);
          
       _.each(self.sweets, function(swt) {
        if(_.contains(swt.how.tags, "Tradition")){
           $("#mysoredusseraB1-store").append(_.template(template(swt))); // filtered response will be appended to DOM
        }
-      }, self.sweets);
+      },  self.sweets);
+      }, {
+        triggerOnce: true
+      });
+
 //section 1 of narrative
    $('#section1').waypoint(function(direction) {// waypoint is jquery plug in, to check for scroll position to display sweets in the widget
       console.log("insec1");
@@ -213,7 +221,7 @@ var SweetsView = Backbone.View.extend({
       filterResp,
       template =  _.template($("#store-template").html()); 
       filterResp = _.filter(self.sweets, function(swt) { return swt.how.comment});
-      _.each(filterResp, function(swt) { 
+          _.each(filterResp, function(swt) { 
         if(_.contains(swt.how.tags, "GirijaKalyanaStory")) { // to filter sweets with Tags
           $("#sectionA-store").append(_.template(template(swt))); // filtered response will be appended to DOM
         }
