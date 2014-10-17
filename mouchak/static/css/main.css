@@ -1,46 +1,3 @@
-/* Global Styles */
-
-html,
-body {
-  height: 100%;
-  width: 100%;
-  font-size: 16px;
-  font-family: "Lobster, sans";
-  background: url(/gk-swt-demo/static/uploads/Teppotsava_Pond_located_left_side_of_the_Virupaksha_Temple.jpg)repeat top transparent; 
-}
-#gkdemo-header {
-  /*background: url(/gk-swt-demo/static/uploads/Teppotsava_Pond_located_left_side_of_the_Virupaksha_Temple.jpg)no-repeat top transparent; */
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  position: relative;
-  top: 0px;
-  left: 0px;
-  height:100%;
-  width:100%;
-  box-sizing: border-box;
-}
-#header-text {
-  font-size: 50px;
-  text-shadow: 2px 3px 4px grey;
-  margin-left:37%;
-  margin-top:10%;
-  position:fixed;
-  top:-10%;
- /* position: absolute;
-  top:20%;
-  left:25%;*/
-}
-.background  {
-  /*position: fixed;
-  top: 0px;
-  left: 0px;*/
-  width: 100%;
-  height: 200%;
-  background-repeat: no-repeat;
-  background-size: cover;i
-}
 .backgroundchaha {
   background-color: #fff;
 }
@@ -56,51 +13,9 @@ body {
   text-align: justify;
   opacity:0.9;
 }
-#prologue {
-  margin-left: -5px;
-  margin-top:-10%;
-  background-color:#A5DA91;
-  position: relative;
-  top:169px;
-  left: 3px;
-  padding: 10px 10px 5px 5px;
-  text-align: justify;
-}
 #mysoredusseraA{
   position:absolute;
   left:0px;
-}
-#prologueA {
-  position:absolute;
-  left:0px;
-  top:-80px;
-
-}
-
-#prologueB{
-  position: absolute;
-  top:112px;
-  left:0px;
-}
-
-.swtTags {
-  font-size: 20px;
-  color: green;
-
-}
-
-  /*background-image: url(http://gka-photoshoot.pantoto.org/17April/IMG_9117.jpg); nice pic*/
-#section1 {
-  margin-left: 20px;
-  margin-top:10px;
- /* background-image: url(/static/uploads/IMG_9129.jpg);*/
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  top: 1000px;
-  left: -20px;
-  padding: 20px 10px 24px 5px;
 }
 #mysoredusseraB {
   margin-left: 20px;
@@ -130,108 +45,6 @@ body {
   position:relative;
   top:254px;
 }
-#section1a {
-  position:relative;
-  top:10px;
-}
-#section1b {
-  position:relative;
-  top:75px;
-}
-#section1c {
-  position:relative;
-  top: 189px;
-}
-#section1d {
-  position:relative;
-  top:254px;
-}
-#section2 {
-/*  margin-left: 20px;*/
-  margin-top:10px;
-  position: relative;
-  top: 1352px;
-  left: -9px;
-  background-color: transparent;
-  padding: 20px 10px 24px 5px;
- /* background-image: url(/static/uploads/IMG_9117.jpg);*/
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#section2b {
-  position: relative;
-  top:90px;
-
-}
-#section2c {
-  position: relative;
-  top:200px;
-  left:25px;
-
-}
-#section2d {
-  position: relative;
-  top:300px;
-  left:25px;
-}
-#sweets-container3 {
-  display:none;
-}
-
-#prologue-store {
-  overflow-x:hidden;
-  height:100em;
-  width: auto;
-  position: relative;
-  right: 53%;
-}
-
-#sectionA-store {
-  overflow-x:hidden;
- /* overflow-y:hidden;*/
-  height:39em;
-  width: 444px;
-  background:#74C9A4;
-  margin-left: -34px;
-  margin-right: 10px;
-  box-shadow: 0px 2px 6px #0E601B;
-  position: relative;
-  top:20px;
-  left:15px;
-}
-
-#sectionA1-store {
-  overflow-x:hidden;
- /* overflow-y:hidden;*/
-  height:39em;
-  width: 444px;
-  background:#74C9A4;
-  margin-left: -14px;
-  box-shadow: 0px 2px 6px #0E601B;
-  position: relative;
-  top:-85px;
-}
-#sectionB-store {
-  overflow-x:hidden;
-  height:40.5em;
-  width: 444px;
-  background:#74C9A4;
-  position: relative;
-  box-shadow: 0px 2px 6px #0E601B;
-  left:5px;
-}
-
-#sectionB1-store {
-  overflow-x:hidden;
-  height:39em;
-  width: 428px;
-  background:#74C9A4;
-  position: relative;
-  box-shadow: 0px 2px 6px #0E601B;
-  top:-36px;
-  left:3px; 
-}
 #mysoredusseraB1-store {
   overflow-x:hidden;
   height:39em;
@@ -252,13 +65,6 @@ body {
   top:-36px;
   left:3px; 
 }
-#section1e {
-  margin-top: -20px;
-  margin-bottom: 3px;
-  position:relative;
-  top:10px;
-  z-index:1;
-}
 
 #mysoredusseraB5 {
   margin-top: -20px;
@@ -268,20 +74,6 @@ body {
   z-index:1;
 }
 
-#section2e {
-  margin-bottom: -57px;
-  z-index: 1;
-}
-#section3 {
-  height: auto;
-  background-color:#0E601B;
-  margin-top:10px;
-  position: relative;
-  top: 3541px;
-  left: -9px;
-  padding: 20px 10px 24px 5px;
-  background-size: cover;
-}
 
 #mysoredusseraC {
   height: auto;
@@ -297,11 +89,6 @@ body {
   height: 700px;
   background-color:#0E601B;
 }
-#section3-store {
-  height: 700px;
-  background-color:#0E601B;
-}
-
 .text-container {
   margin-top: 85px;
   position: absolute;
@@ -315,172 +102,9 @@ body {
   
 }
 
-
-
-#sweets-store {
-  height: auto;
-  margin-left: 700px;
-  width: 300px;
-  margin-top: -53%;
-  background-color: black;
-}
-
-.store-text {
-  margin-left:20%;
-  width: auto;
-  margin-top: -45px;
-  height: 60px;
-  overflow-y: auto;
- /* margin-top:-7%;*/
-}
-.img-wrapper img {
-  width: 375px;
-  margin-top: 20px;
-  margin-left: 0px;
-}
-
-.text-wrapper {
-  line-height: inherit;
-  font-size: 14px;
-  margin-left: -40px;
-  margin-top: 45px;
-  overflow-y: auto;
-}
-.store-wrapper img {
-  height: auto;
-  width: 400px;
-  border: 1px solid #ccc;
-  margin: 2px 0px 2px -5px;
-}
-
-.well{
-  border-radius:0;
-  background-color:#A5DA91;
-  border: 1px transparent;
-}
 /* Side Menu */
 
 
-.vert-text {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-}
-
-.vert-text h1 {
-  padding: 0;
-  margin: 0;
-  font-size: 4.5em;
-  font-weight: 700;
-}
-
-/* Side Menu */
-
-#sidebar-wrapper {
-  margin-left: -250px;
-  top: 30px;
-  left: 0;
-  width: 250px;
-  background: #9ACBB8;
-  opacity:0.9;
-  position: fixed;
-  height: 85%;
-  overflow-y: auto;
-  z-index: 1000;
-  -webkit-transition: all 0.4s ease 0s;
-  -moz-transition: all 0.4s ease 0s;
-  -ms-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
-  margin-top:0px;
-}
-
-.sidebar-nav {
-  position: absolute;
-  top: 0;
-  width: 250px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.sidebar-nav li {
-  line-height: 40px;
-  text-indent: 20px;
-}
-
-.sidebar-nav li a {
-  color: #999999;
-  display: block;
-  text-decoration: none;
-}
-
-.sidebar-nav li a:hover {
-  color: #fff;
-  background: rgba(255,255,255,0.2);
-  text-decoration: none;
-}
-
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
-  text-decoration: none;
-}
-
-.sidebar-nav > .sidebar-brand {
-  height: 55px;
-  line-height: 55px;
-  font-size: 18px;
-}
-
-.sidebar-nav > .sidebar-brand a {
-  color: #999999;
-}
-
-.sidebar-nav > .sidebar-brand a:hover {
-  color: #fff;
-  background: none;
-}
-
-#menu-toggle {
-  top: 0;
-  left: 0;
-  position: fixed;
-  z-index: 10;
-}
-
-#sidebar-wrapper.active {
-  left: 250px;
-  top:30px;
-  width: 250px;
-  -webkit-transition: all 0.4s ease 0s;
-  -moz-transition: all 0.4s ease 0s;
-  -ms-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
-}
-
-.toggle {
-  margin: 5px 5px 0 0;
-}
-
-/* Full Page Image Header Area */
-
-.vert-text {
-  color: #ccc;
-  z-index:100;
-}
-
-.header {
-  display: table;
-  height: 100%;
-  width: 100%;
-  position: relative;
-  background: url(/static/uploads/Teppotsava_Pond_located_left_side_of_the_Virupaksha_Temple.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 
 /* Intro */
 

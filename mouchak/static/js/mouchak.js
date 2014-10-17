@@ -192,7 +192,9 @@
       template =  _.template($("#store-template").html()); // template from index.html
       _.each(self.sweets, function(swt) {
         //        swt.where = "/cache?url=" + swt.where + "&height=500&width=500";
-        $("#sweetWidget").append(_.template(template(swt))); // filtered response will be appended to DOM
+        if(_.contains(swt.how.tags, "lolcat")) {
+          $("#sweetWidget").append(_.template(template(swt))); // filtered response will be appended to DOM
+        }
       }, self.sweets);
       //section 1 of narrative
       $('#section1').waypoint(function(direction) {// waypoint is jquery plug in, to check for scroll position to display sweets in the widget
