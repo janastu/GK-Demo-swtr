@@ -202,11 +202,6 @@ var SweetsView = Backbone.View.extend({
       }, self.sweets);
          
       _.each(self.sweets, function(swt) {
-       if(_.contains(swt.how.tags, "Ritual")){
-          $("#mysoredusseraB1-store").append(_.template(template(swt))); // filtered response will be appended to DOM
-       }
-      }, self.sweets);
-      _.each(self.sweets, function(swt) {
        if(_.contains(swt.how.tags, "Tradition")){
           $("#mysoredusseraB1-store").append(_.template(template(swt))); // filtered response will be appended to DOM
        }
