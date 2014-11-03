@@ -205,7 +205,7 @@
         filterResp = _.filter(self.sweets, function(swt) { return swt.how.comment});
         _.each(filterResp, function(swt) {
           if(_.contains(swt.how.tags, "GirijaKalyanaStory")) { // to filter sweets with Tags
-            swt.where = "/cache?url=" + swt.where + "&height=500&width=500";
+            swt.where = "cache?url=" + swt.where + "&height=500&width=500";
             $("#sectionA-store").append(_.template(template(swt))); // filtered response will be appended to DOM
           }
         }, filterResp);
@@ -219,7 +219,7 @@
         filterResp = _.filter(self.sweets, function(swt) { return swt.how});
         _.each(filterResp, function(swt) {
           if(_.contains(swt.how.tags, "ManmathaKonda")) {
-            swt.where = "/cache?url=" + swt.where + "&height=500&width=500";
+            swt.where = "cache?url=" + swt.where + "&height=500&width=500";
             $("#sectionA1-store").append(_.template(template(swt)));
           }
         }, filterResp);
@@ -236,7 +236,7 @@
         filterResp = _.filter(self.pradeepSweets, function(swt) { return swt.how});
         _.each(filterResp, function(swt) {
           console.log(swt);
-          swt.where = "/cache?url=" + swt.where + "&height=500&width=500";
+          swt.where = "cache?url=" + swt.where + "&height=500&width=500";
           $("#sectionB-store").append(_.template(template(swt))); // filtered response will be appended to DOM
         }, filterResp);
       }, {
@@ -256,7 +256,7 @@
             }
             else{
               console.log(swt, "hampi found");
-              swt.where = "/cache?url=" + swt.where + "&height=500&width=500";
+              swt.where = "cache?url=" + swt.where + "&height=500&width=500";
               $("#sectionB1-store").append(_.template(template(swt))); // filtered response will be appended to the DOM
             }
           }

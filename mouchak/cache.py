@@ -6,6 +6,7 @@ import requests
 import flask
 
 cache = Module(__name__, name="cache")
+CACHE_ROOT_DIRECTORY = os.path.join(os.path.dirname(os.path.abspath(__file__)))
 
 
 @cache.route('/')
@@ -24,7 +25,8 @@ def create_cache():
         height = 300
 
     dirn = urlparse(flask.request.args['url']).netloc
-    dirn = os.path.join('cache', dirn)  # Store cache under a directory
+    dirn = os.path.join(CACHE_ROOT_DIRECTORY, 'cache', dirn)  # Store cache
+    # under a directory
     f = urlparse(flask.request.args['url']).path.split(
         '/')[-1]  # Name of the file
     fp = os.path.join(dirn, f)
