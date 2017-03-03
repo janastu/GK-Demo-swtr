@@ -162,23 +162,23 @@
       this.amraSweets = [];
       //Ajax request to fetch Sweets from sweet store using the api's Who, what,
       //where and How
-      $.ajax({url: "http://teststore.swtr.us/api/sweets/q?what=img-anno&who=bhanu",
+      $.ajax({url: "http://thestore.swtr.in/api/sweets/q?what=img-anno&who=scribe",
               success: function(resp) {console.log('done..bhanu sweets', resp);
                                        self.sweets = resp;
                                       }
              });
-      $.ajax({url: "http://teststore.swtr.us/api/sweets/q?what=img-anno&who=Guest",
+      $.ajax({url: "http://thestore.swtr.in/api/sweets/q?what=img-anno&who=Guest",
               success: function(resp) {console.log('done..Guest  sweets', resp);
                                        self.guestSweets = resp;
                                        self.interactiveSweets();
                                       }
              });
-      $.ajax({url: "http://teststore.swtr.us/api/sweets/q?what=img-anno&who=pradeep",
+      $.ajax({url: "http://thestore.swtr.in/api/sweets/q?what=img-anno&who=pradeep",
               success: function(resp) {console.log('done..Pradeep sweets', resp);
                                        self.pradeepSweets =resp;
                                       }
              });
-      $.ajax({url: "http://teststore.swtr.us/api/sweets/q?what=img-anno&who=Amrapali",
+      $.ajax({url: "http://thestore.swtr.in/api/sweets/q?what=img-anno&who=Amrapali",
               success: function(resp) {console.log('done.. Amrapali Sweets', resp);
                                        self.amraSweets = resp;
                                       }
